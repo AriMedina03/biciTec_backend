@@ -1,9 +1,10 @@
 const { Router } = require("express");
 
-const getBycicles = require("../controllers/bicycleControler");
+const { getBycicles, addBycicles } = require("../controllers/bicycleControler");
 
 const bicycleRoute = Router();
 
 bicycleRoute.get("/bicycle/:bicycleId", getBycicles);
+bicycleRoute.post("/bicycle/:bicycleId", addBycicles);
 
 module.exports = bicycleRoute;
