@@ -1,10 +1,12 @@
 const { Router } = require("express");
+//const rackRoute = require("../controllers/rackControler");
 
-const { getRack, addRack } = require("../controllers/rackControler", getRacks);
+const {getRack, addRack} = require("../controllers/rackControler");
 
 const rackRoutes = Router();
 
-rackRoute.get("/bicycle/", getRack);
-rackRoute.post("/bicycle/:bicycleId/:x/:y", addRack);
+rackRoutes.get("/rack/:rackID", getRack);
+rackRoutes.post("/rack/:slotID/:rackID/:bicycle/:rackX/:rackY", addRack);
+
 
 module.exports = rackRoutes;
