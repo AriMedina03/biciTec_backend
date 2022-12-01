@@ -1,0 +1,25 @@
+{
+  "name": "bicitec_backend",
+  "version": "1.0.0",
+  "description": "proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AriMedina03/biciTec_backend.git"
+  },
+  "keywords": [
+    "iot"
+  ],
+  "author": "Ari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AriMedina03/biciTec_backend/issues"
+  },
+  "homepage": "https://github.com/AriMedina03/biciTec_backend#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
